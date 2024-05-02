@@ -3,8 +3,8 @@
 
 int main() { // read procedures
 
-    printf("I like pizza!\n");
-    printf("Its really good");
+    // printf("I like pizza!\n");
+    // printf("Its really good");
     //return 0; // program exit status - 0 = no errors
 
 
@@ -27,11 +27,11 @@ int main() { // read procedures
     \t = new table in a line of text
     */
 
-    printf("\n1\t2\t3\n4\t5\t6\n7\t8\t9\n");
-    // grid of numbers
+    // printf("\n1\t2\t3\n4\t5\t6\n7\t8\t9\n");
+    // // grid of numbers
 
-    printf("\"I like pizza\" - this is a quote by MEEEE :3 ");
-    printf("\n\'I like pizza\' - this is a quote by MEEEE :3 ");
+    // printf("\"I like pizza\" - this is a quote by MEEEE :3 ");
+    // printf("\n\'I like pizza\' - this is a quote by MEEEE :3 ");
     // escape sequence for quotes
 
     // VARIABLES IN C-LANG
@@ -41,31 +41,31 @@ int main() { // read procedures
        declare its name and type for data we are storing
     */
 
-    int x;                  // declaration
-    x = 123;                // initalization
-    int y = 123;            // declaration + initalization
+    // int x;                  // declaration
+    // x = 123;                // initalization
+    // int y = 123;            // declaration + initalization
 
-    int age = 24;           // integer
-    float gpa = 2.05;       // floating point number
-    char grade = 'C';       // single character
-    char name[] = "Bro";    // array of characters
+    // int age = 24;           // integer
+    // float gpa = 2.05;       // floating point number
+    // char grade = 'C';       // single character
+    // char name[] = "Bro";    // array of characters
 
     // format specifier
-    printf("\nHello %s", name);
-    printf("\nYou are %d years old", age);
-    printf("\nYour average grade is %c", grade);
-    printf("\nYour gpa is %f", gpa);
+    // printf("\nHello %s", name);
+    // printf("\nYou are %d years old", age);
+    // printf("\nYour average grade is %c", grade);
+    // printf("\nYour gpa is %f", gpa);
 
 
     // DATA TYPES RAHHHHHHHHHH
-    char a = 'C';           // single character %c
-    char b[] = "Andrew";    // array of characters %s
-    float c = 3.14;         // 4 bytes - 32 bits - %f
-    double d = 3.141592;    // 8 bytes - 64 bits - %lf
-    bool e = true;          // true or false - %d
-    int j = 234234;         // whole int - 4 bytes - %d
-    char f = 100;           // 1 byte - %d or %c = 0-127
-    unsigned char g = 255;  // 1 byte - %d or %c = 0-255
+    // char a = 'C';           // single character %c
+    // char b[] = "Andrew";    // array of characters %s
+    // float c = 3.14;         // 4 bytes - 32 bits - %f
+    // double d = 3.141592;    // 8 bytes - 64 bits - %lf
+    // bool e = true;          // true or false - %d
+    // int j = 234234;         // whole int - 4 bytes - %d
+    // char f = 100;           // 1 byte - %d or %c = 0-127
+    // unsigned char g = 255;  // 1 byte - %d or %c = 0-255
 
     // FORMAT SPECIFIERS BOOOOOOO >:(
     
@@ -78,22 +78,22 @@ int main() { // read procedures
     // %.1 - decimal precision
     // %1 - min field width
     // %- left align
-    float item1 = 5.75;
-    float item2 = 10.00;
-    float item3 = 100.99;
+    // float item1 = 5.75;
+    // float item2 = 10.00;
+    // float item3 = 100.99;
 
-    printf("\nItem 1: $%-8.2f", item1);
-    printf("\nItem 2: $%8.2f", item2);
-    printf("\nItem 3: $%8.2f", item3);
+    // printf("\nItem 1: $%-8.2f", item1);
+    // printf("\nItem 2: $%8.2f", item2);
+    // printf("\nItem 3: $%8.2f", item3);
 
-    // CONSTANTS
-    const float PI = 3.14159; //fixed value that cant be altered
-    printf("\n%f", PI);
+    // // CONSTANTS
+    // const float PI = 3.14159; //fixed value that cant be altered
+    // printf("\n%f", PI);
 
     // ARITHMETIC I HATE MATHHHH
-    x = 5;
-    y = 2;
-    int z = x + y;
+    // x = 5;
+    // y = 2;
+    // int z = x + y;
 
     /*
     +   = add
@@ -108,7 +108,7 @@ int main() { // read procedures
     convert to float to not lose data
     */
 
-    printf("\n x + y = %d", z);
+    // printf("\n x + y = %d", z);
 
     // AUGMENTED ASSIGNMENT OPERATORS
 
@@ -125,6 +125,17 @@ int main() { // read procedures
 
     etc
     */
+
+    int age;
+    char name[25];
+    printf("\nWhats your name?");
+    // scanf("%s", &name); - only reads up to a whitespace
+    fgets(name, 25, stdin); // able to read any whitespaces
+    printf("\nHow old are you?");
+    scanf("%d", &age);
+    printf("\nYou are %d years old", age);
+    printf("\nHello %s how are you?", name);
+
 
     return 0;
 }
