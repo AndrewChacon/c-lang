@@ -1,5 +1,6 @@
 #include <stdio.h> // add packages 
 #include <stdbool.h> // for booleans
+#include <math.h> // include math functions
 
 int main() { // read procedures
 
@@ -126,16 +127,30 @@ int main() { // read procedures
     etc
     */
 
-    int age;
-    char name[25];
-    printf("\nWhats your name?");
-    // scanf("%s", &name); - only reads up to a whitespace
-    fgets(name, 25, stdin); // able to read any whitespaces
-    printf("\nHow old are you?");
-    scanf("%d", &age);
-    printf("\nYou are %d years old", age);
-    printf("\nHello %s how are you?", name);
+    // int age;
+    // char name[25];
+    // printf("\nWhats your name?");
+    // // scanf("%s", &name); - only reads up to a whitespace
+    // fgets(name, 25, stdin); // able to read any whitespaces
+    // printf("\nHow old are you?");
+    // scanf("%d", &age);
+    // printf("\nYou are %d years old", age);
+    // printf("\nHello %s how are you?", name);
 
+    // NERD MATH FUNCTIONS >:/
+
+    // double A = sqrt(9);     // square root
+    // double B = pow(2, 4);   // power of 
+    // int C = round(3.14);
+    // int D = ceil(3.14);     // rounds up
+    // int E = floor(3.99);    // rounds down
+    // double F = fabs(-100);  // absolute value
+    // double G = log(3);      // logarithm
+    // double H = sin(45);
+    // double I = cos(45);
+    // double J = tan(45); 
+
+    // printf("\n%lf", B);
 
     return 0;
 }
