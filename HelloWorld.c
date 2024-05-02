@@ -108,9 +108,23 @@ int main() { // read procedures
     convert to float to not lose data
     */
 
-
-
     printf("\n x + y = %d", z);
+
+    // AUGMENTED ASSIGNMENT OPERATORS
+
+    /*
+    x = x + 2
+    or
+    x += 2      shortcut for the line above
+
+    x = x - 3
+    x -= 3
+
+    x = x * 4
+    x *= 4
+
+    etc
+    */
 
     return 0;
 }
