@@ -90,5 +90,27 @@ int main() { // read procedures
     const float PI = 3.14159; //fixed value that cant be altered
     printf("\n%f", PI);
 
+    // ARITHMETIC I HATE MATHHHH
+    x = 5;
+    y = 2;
+    int z = x + y;
+
+    /*
+    +   = add
+    -   = sub
+    *   = multi
+    /   = divi
+    %   = modulus (remainder of the division)
+    ++  = increment 
+    --  = decrement
+
+    dividing ints truncates the value
+    convert to float to not lose data
+    */
+
+
+
+    printf("\n x + y = %d", z);
+
     return 0;
 }
