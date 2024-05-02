@@ -1,4 +1,5 @@
 #include <stdio.h> // add packages 
+#include <stdbool.h> // for booleans
 
 int main() { // read procedures
 
@@ -54,6 +55,36 @@ int main() { // read procedures
     printf("\nYou are %d years old", age);
     printf("\nYour average grade is %c", grade);
     printf("\nYour gpa is %f", gpa);
+
+
+    // DATA TYPES RAHHHHHHHHHH
+    char a = 'C';           // single character %c
+    char b[] = "Andrew";    // array of characters %s
+    float c = 3.14;         // 4 bytes - 32 bits - %f
+    double d = 3.141592;    // 8 bytes - 64 bits - %lf
+    bool e = true;          // true or false - %d
+    int j = 234234;         // whole int - 4 bytes - %d
+    char f = 100;           // 1 byte - %d or %c = 0-127
+    unsigned char g = 255;  // 1 byte - %d or %c = 0-255
+
+    // FORMAT SPECIFIERS BOOOOOOO >:(
+    
+    // %c - character
+    // %s - string 
+    // %f - float
+    // %lf - double 
+    // %d - integer
+
+    // %.1 - decimal precision
+    // %1 - min field width
+    // %- left align
+    float item1 = 5.75;
+    float item2 = 10.00;
+    float item3 = 100.99;
+
+    printf("\nItem 1: $%-8.2f", item1);
+    printf("\nItem 2: $%8.2f", item2);
+    printf("\nItem 3: $%8.2f", item3);
 
     return 0;
 }
