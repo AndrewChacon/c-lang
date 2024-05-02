@@ -86,5 +86,9 @@ int main() { // read procedures
     printf("\nItem 2: $%8.2f", item2);
     printf("\nItem 3: $%8.2f", item3);
 
+    // CONSTANTS
+    const float PI = 3.14159; //fixed value that cant be altered
+    printf("\n%f", PI);
+
     return 0;
 }
