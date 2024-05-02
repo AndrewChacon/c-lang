@@ -152,5 +152,18 @@ int main() { // read procedures
 
     // printf("\n%lf", B);
 
+    const double PI = 3.14159;
+    double radius;
+    double circumference;
+    double area;
+
+    printf("\nEnter the radius of a circle: ");
+    scanf("%lf", &radius);
+
+    circumference = 2 * PI * radius;
+    area = PI * pow(radius, 2);
+    printf("\nCircumfernece: %.2lf", circumference);
+    printf("\nArea: %.2lf", area);
+
     return 0;
 }
